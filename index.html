@@ -1,3 +1,16 @@
+<input id="searchbar" placeholder="Search freely">
 <script>
+  var searchbar=document.getElementById("searchbar");
   
+  searchbar.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    try {
+      await registerSW();
+    } catch (err) {
+      alert(err.toString());
+      throw err;
+    }
+    const url = search(searchbar.value, "https://www.google.com/search?q=%s");
+    window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  });
 </script>
