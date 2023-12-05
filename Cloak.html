@@ -1,10 +1,23 @@
-function openGame() {
-var win = window.open()
-var url = "https://example.com"
-var iframe = win.document.createElement('iframe')
-iframe.style.width = "100%";
-iframe.style.height = "100%";
-iframe.style.border = "none";
-iframe.src = url
-win.document.body.appendChild(iframe)
-}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cloak</title>
+    </head>
+    <body>
+        <button onclick="openNewWindow()">Cloak</button>
+
+        <script>
+            function openNewWindow() {
+                var newWindow = window.open();
+
+                var iframe = document.createElement('iframe');
+                iframe.style.width = '100%';
+                iframe.style.height = '600px';
+                iframe.style.border = 'none';
+                iframe.src = 'https://www.example.com/';
+
+                newWindow.document.body.appendChild(iframe);
+            }
+        </script>
+    </body>
+</html>
