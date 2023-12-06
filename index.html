@@ -1,0 +1,70 @@
+<style>
+
+        body{
+                background-color:black;
+                overflow:none;
+        }
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+        z-index:2;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          position:absolute;
+                box-shadow: 0 6px 2px -2px white;
+          width:100%;
+          top:0px;
+          left:0px;
+        }
+
+        li.nav-item {
+            float: left;
+            cursor: pointer !important;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            transition: all 1s;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.nav-item a:hover {
+            background-color: #444;
+        }
+      #frame{
+        border:0px solid black;
+        position:absolute;
+        width:100%;
+        z-index:1;
+        height:100%;
+        bottom:0px;
+        left:0px;
+      }
+    </style>
+<ul class="navbar">
+    <li class="nav-item"><a onclick="frame.src='/home.html';">Home</a></li>
+        
+    <li class="nav-item2"><a onclick="credits();">Credits</a></li>
+    <li class="nav-item2"><a href="https://github.com/dragon731012">My Github</a></li>
+    <li class="nav-item2"><a href="https://discord.gg/Vd5sJVqVzH">Discord Server</a></li>
+    <li class="nav-item2"><a href="https://my.cheddarup.com/c/dm-network">Donate</a></li>
+	
+    <!-- <li class="nav-item2"><a href="https://gofund.me/6ae20d5f" style="display:none;"><a class="custom-dbox-popup" href="https://donorbox.org/dm-network">Donate</a></a></li> -->
+    <!-- <li class="nav-item2"><a onclick="blank();">About:blank</a></li> -->
+</ul>
+<iframe id="frame" src="home.html"></iframe>
+<script>
+  var frame=document.getElementById("frame");
+  function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
+  if (get_cookie("location")!=null){
+          frame.src=get_cookie("location");
+  }
+  frame.style.height=(window.innerHeight-document.getElementsByClassName("navbar")[0].offsetHeight+5)+"px";
+  setInterval(function(){
+          document.cookie="location="+frame.contentWindow.location.href.replace(window.location.origin,"")+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
+  },100);
+</script>
