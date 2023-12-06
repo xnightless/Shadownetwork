@@ -26,7 +26,9 @@
   var searchform=document.getElementById("searchform");
 
   var fontsize=2560/screen.width*17.5;
+  var fontsize2=2560/screen.width*6.5;
   document.getElementById("title").style.fontSize=fontsize+"px";
+  document.getElementById("searchbar").style.fontSize=fontsize2+"px";
   
   searchform.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -62,7 +64,8 @@
     position: absolute;
     bottom: 45%;
     left: 15%;
-    padding:3px;
+    padding-top:10px;
+    padding-bottom:10px;
     border-radius: 25px;
     background: transparent;
     border: 2px solid black;
