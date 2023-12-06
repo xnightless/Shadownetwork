@@ -41,14 +41,21 @@
   });
 </script>
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+:root {
+  --primary-color: #0f3460;
+  --secondary-color: #ffcc29;
+  --text-color: #ffffff;
+  --background-color: #0f0f0f;
+}
   #title{
     width:100%;
     position:absolute;
     bottom:60%;
     left:0px;
     text-align:center;
-    color:black;
-    text-shadow: 3px 6px 2px #c4c4c4;
+    color:var(--primary-color);;
+    text-shadow: 3px 6px 2px var(--secondary-color);
   }
   
   #searchbar{
@@ -61,26 +68,14 @@
     background: transparent;
     border: 2px solid black;
     text-align: center;
-    text-shadow: 3px 6px 2px #c4c4c4;
-    box-shadow: 3px 6px 2px #c4c4c4;
-    color:black;
+    text-shadow: 3px 6px 2px var(--secondary-color);
+    box-shadow: 3px 6px 2px var(--secondary-color);
+    color:var(--primary-color);;
   }
   #searchbar::placeholder{
-    color:black;
-    text-shadow: 3px 6px 2px #c4c4c4;
+    color:var(--primary-color);;
+    text-shadow: 3px 6px 2px var(--secondary-color);
   }
-  body{
-    background:#919191;
-  }
-
-  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
-:root {
-  --primary-color: #0f3460;
-  --secondary-color: #ffcc29;
-  --text-color: #ffffff;
-  --background-color: #0f0f0f;
-}
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
