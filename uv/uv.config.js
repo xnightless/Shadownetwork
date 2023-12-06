@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/service/',
-    bare: "https://pyth0n.software/bare/",
+    bare: "https://gointerstellar.app/outerspace/",
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
