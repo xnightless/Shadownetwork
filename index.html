@@ -1,6 +1,5 @@
 
 <style>
-
         body{
                 background-color:black;
                 overflow:none;
@@ -187,4 +186,23 @@ a {
   setInterval(function(){
           document.cookie="location="+frame.contentWindow.location.href.replace(window.location.origin,"")+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
   },100);
+</script>
+<script>
+window.addEventListener('load', function () {
+  var currentUrl = window.location.href;
+  if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
+    if (window.open('', '_blank')) {
+      sessionStorage.setItem('tabOpened', 'true');
+      var win = window.open('about:blank', '_blank');
+      win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
+      win.onbeforeunload = function () {
+        sessionStorage.removeItem('tabOpened');
+      };
+      window.close();
+    } else if (!sessionStorage.getItem('alertShown')) {
+      alert("Please enable pop-ups for auto about:blank cloaking to work.");
+      sessionStorage.setItem('alertShown', 'true');
+    }
+  }
+});
 </script>
