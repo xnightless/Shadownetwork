@@ -1,0 +1,128 @@
+        body{
+                background-color:black;
+                overflow:none;
+        }
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+        z-index:2;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          position:absolute;
+          width:100%;
+          top:0px;
+          left:0px;
+        }
+
+        li.nav-item {
+            float: left;
+            cursor: pointer !important;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            transition: all 1s;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li.nav-item a:hover {
+            background-color: #444;
+        }
+      #frame{
+        border:0px solid black;
+        position:absolute;
+        width:100%;
+        z-index:1;
+        height:100%;
+        bottom:0px;
+        left:0px;
+      }
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+:root {
+  --primary-color: white;
+  --secondary-color: #c4c4c4;
+  --background-color: #0f0f0f;
+}
+  #title{
+    width:100%;
+    position:absolute;
+    bottom:60%;
+    left:0px;
+    text-align:center;
+    color:var(--primary-color);
+    text-shadow: 3px 6px 2px var(--secondary-color);
+  }
+  
+  #searchbar{
+    width: 70%;
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px solid black;
+    text-align: center;
+    color:var(--primary-color);
+    border:3px solid var(--primary-color);
+  }
+  #searchbar::placeholder{
+    color:var(--primary-color);
+  }
+body {
+  background-color: var(--background-color);
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+} 
+
+.particles {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 9999;
+  pointer-events:none;
+}
+
+.particle {
+
+
+
+
+  flex: 1;
+  position: relative;
+  top: -10%;
+  animation: snowflakes-fall 15s linear, snowflakes-shake 5s ease-in-out;
+  animation-delay: var(--d);
+  animation-iteration-count: infinite;
+  width:10%;
+  height:10%;
+  color:white;
+}
+
+@keyframes snowflakes-fall {
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes snowflakes-shake {
+  50% {
+    transform: translateX(100px) rotate(5deg);
+  }
+}
