@@ -85,3 +85,15 @@ window.addEventListener('load', function () {
   }
 });
 </script>
+<script>
+  window.addEventListener('keydown', (event) => {
+    const keysPressed = (event.key === '#');
+    if (keysPressed) {
+      document.cookie.split(";").forEach(cookie => {
+        document.cookie = cookie.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+      });
+      alert('All saved cookie data cleared');
+      location.reload(true);
+    }
+  });
+      </script>
