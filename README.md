@@ -1,4 +1,4 @@
-You can NOT deploy to Netlify, Cloudflare Pages, Github Pages or any other static Web Host.
+You can NOT deploy to  Cloudflare Pages, Github Pages or any other static Web Host.
 
 Note Join our Discord Server for more options & tutorials.
 
