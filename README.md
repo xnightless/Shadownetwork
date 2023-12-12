@@ -1,5 +1,5 @@
-Shadow is The best looking proxy in the world with blazing speeds and cloaking an extensive collection of over 200+ unblocked games and apps, providing a seamless unblocked experience for students.
+You can NOT deploy to Netlify, Cloudflare Pages, Github Pages or any other static Web Host.
 
+Note Join our Discord Server for more options & tutorials.
 
-
-🔗 https://discord.gg/G89wNZhzCk
+Deploy to Heroku Run on Replit Deploy to Koyeb Deploy to Render Deploy to Cyclic
