@@ -1,0 +1,143 @@
+<script src="/uv/uv.bundle.js" defer></script>
+<script src="/uv/uv.config.js" defer></script>
+<script src="/register-sw.js" defer></script>
+<script src="/search.js" defer></script>
+<script src="/error.js" defer></script>
+<link href="index.css" rel="stylesheet">
+<form class="searchform" id="searchform">
+  <input id="searchbar" placeholder="Search the web freely">
+</form>
+<div title="Ultraviolet Logo" class="logo-wrapper">
+  <h1  data-text="&nbsp;Shadow" class="text">&nbsp;Shadow</h1>
+</div>
+<b>
+</b>
+      <div class="particles" aria-hidden="true">
+      <div class="particle" style="--d: 0s, 0s;">.</div>
+      <div class="particle" style="--d: 1s, 1s;">.</div>
+      <div class="particle" style="--d: 6s, 0.5s;">.</div>
+      <div class="particle" style="--d: 4s, 2s;">.</div>
+      <div class="particle" style="--d: 2s, 2s;">.</div>
+      <div class="particle" style="--d: 8s, 3s;">.</div>
+      <div class="particle" style="--d: 6s, 2s;">.</div>
+      <div class="particle" style="--d: 2.5s, 1s;">.</div>
+      <div class="particle" style="--d: 1s, 0s;">.</div>
+      <div class="particle" style="--d: 3s, 1.5s;">.</div>
+<script>
+  var searchbar=document.getElementById("searchbar");
+  var searchform=document.getElementById("searchform");
+
+  var fontsize=2560/screen.width*17.5;
+  document.getElementById("title").style.fontSize=fontsize+"px";
+  
+  searchform.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    try {
+      await registerSW();
+    } catch (err) {
+      alert(err.toString());
+      throw err;
+    }
+    const url = search(searchbar.value, "https://www.google.com/search?q=%s");
+    window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
+  });
+</script>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+:root {
+  --primary-color: white;
+  --secondary-color: #c4c4c4;
+  --background-color: #0f0f0f;
+}
+  #title{
+    width:100%;
+    position:absolute;
+    bottom:60%;
+    left:0px;
+    text-align:center;
+    color:var(--primary-color);
+    text-shadow: 3px 6px 2px var(--secondary-color);
+  }
+  
+  #searchbar{
+    height: 50px;
+    width: 70%;
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    padding:3px;
+    border-radius: 15px;
+    background: transparent;
+    border: 2px solid black;
+    text-align: center;
+    color:var(--primary-color);
+    border:3px solid var(--primary-color);
+    transition: all 1s;
+    filter: drop-shadow(0 0 20px #151414) drop-shadow(0 0 50px #151414);
+  }
+  #searchbar:hover{
+    transform: translateY(-5%);
+    background-color: #151414;
+  }
+  #searchbar::placeholder{
+    color:var(--primary-color);
+  }
+body {
+  background-image: url("backgrouond.webp");
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+} 
+
+.particles {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 9999;
+  pointer-events:none;
+}
+
+.particle {
+
+
+
+
+  flex: 1;
+  position: relative;
+  top: -10%;
+  animation: snowflakes-fall 15s linear, snowflakes-shake 5s ease-in-out;
+  animation-delay: var(--d);
+  animation-iteration-count: infinite;
+  width:10%;
+  height:10%;
+  color:white;
+}
+
+@keyframes snowflakes-fall {
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes snowflakes-shake {
+  50% {
+    transform: translateX(100px) rotate(5deg);
+  }
+}
+</style>
