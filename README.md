@@ -18,9 +18,7 @@
 - Salamander
 - Potato
 - Juinior
-- Thebro57
 - WaveDemure
-- Derpman
 - Jotaro
 
 
