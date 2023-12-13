@@ -24,5 +24,5 @@
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=https://github.com/Shadowproxynetwork/Shadownetwork) <a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/Shadowproxynetwork"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a><a target="_blank" href="https://replit.com/https://github.com/Shadowproxynetwork"><img alt="Run on Replit" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg"></a>
 
 ## Join our Discord!
- href="discord.gg/G89wNZhzCk" 
+discord.gg/G89wNZhzCk" 
 
