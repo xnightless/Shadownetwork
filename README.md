@@ -20,4 +20,4 @@
 
 ## Join our Discord!
 <a href="discord.gg/G89wNZhzCk" target="new">
-<img src="https://camo.githubusercontent.com/895cccd66886e1fb7bc7f1e14edbb0f30d8c7a88233f276e99647303d372ff81/68747470733a2f2f696e7669646765742e737769746368626c6164652e78797a2f735750484364784350553f7468656d653d6461726b"></a>
+
