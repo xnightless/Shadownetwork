@@ -7,6 +7,7 @@
 - Fast proxy
 - Tons of Apps & Games
 - Best theme backround
+- Best proxy alive
 ## Contributors:
 - Nightless
 - Ghostly
@@ -19,6 +20,7 @@
 - WaveDemure
 - Derpman
 - Jotaro
+
 
 
 ## Deployment
