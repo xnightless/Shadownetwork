@@ -1,5 +1,4 @@
-# Doge Unblocker V4
-Doge Unblocker is a very powerful, ultra-fast web proxy designed for customization, security, and anonymity.
+# Shadow Network V1 A fast tab cloaking with hundreds of games to play and apps
 ## Features:
 - Advanced Tab Cloaking
 - Advanced About:Blank Cloaking (prevents site from showing on browser history)
@@ -20,5 +19,5 @@ Doge Unblocker is a very powerful, ultra-fast web proxy designed for customizati
 [![Deploy to Koyeb](https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/dogenetwork/v4)
 
 ## Join our Discord!
-<a href="https://discord.gg/3Cr6u2TnQe" target="new">
+<a href="discord.gg/G89wNZhzCk" target="new">
 <img src="https://camo.githubusercontent.com/895cccd66886e1fb7bc7f1e14edbb0f30d8c7a88233f276e99647303d372ff81/68747470733a2f2f696e7669646765742e737769746368626c6164652e78797a2f735750484364784350553f7468656d653d6461726b"></a>
