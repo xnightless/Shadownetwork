@@ -9,6 +9,7 @@
 - Best theme backround
 - Best proxy alive
 - Most useful Methods and Cheats
+- Widgetbot 
 ## Contributors:
 - Nightless
 - Ghostly
