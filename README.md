@@ -9,7 +9,7 @@
 - Best theme backround
 ## Contributors:
 - Nightless
-- Potatoe
+- Potato
 - Snorlax
 - Juinior
 - Jotaro
