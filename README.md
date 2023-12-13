@@ -8,6 +8,7 @@
 - Tons of Apps & Games
 - Best theme backround
 - Best proxy alive
+- Most useful Methods and Cheats
 ## Contributors:
 - Nightless
 - Ghostly
