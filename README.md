@@ -8,13 +8,7 @@
 - Tons of Apps & Games
 - Best theme backround
 ## Contributors:
-- Nightless
-- Potato
-- Snorlax
-- Juinior
-- Jotaro
-- salamander
-- X_X
+[![Contrib](https://contrib.rocks/image?repo=ShadowproxyNetwork/Shadow)](https://github.com/Shadowproxynetwork/Shadownetwork/graphs/contributors)
 ## Deployment
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/template/h7StcI?referralCode=u82tqg)
 <a href="https://render.com/deploy?repo=https://github.com/Shadowproxynetwork/Shadownetwork">
