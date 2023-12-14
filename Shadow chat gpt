@@ -1,0 +1,13 @@
+import openai
+# Set your API key
+api_key = "YOUR_API_KEY"
+# Initialize the OpenAI API client
+openai.api_key = api_key
+# Define a prompt for the chatbot
+prompt = . The assistant is helpful, creative, clever, fun, smart, very friendly.\n\n"
+# Generate a chatbot response
+response = openai.Completion.create(
+  engine="text-davinci-003",
+  prompt=prompt,
+  max_tokens=150
+)
