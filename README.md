@@ -18,9 +18,6 @@
 - Snorlax
 - Salamander
 - Potato
-- Juinior
-- WaveDemure
-- Jotaro
 
 
 
