@@ -19,7 +19,8 @@
 - Salamander
 - Potato
 - Wave Demure
-- 
+- Juinior
+- thebro57
 
 
 
