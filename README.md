@@ -12,7 +12,7 @@
 - Most useful Methods and Cheats
 - Widgetbot 
 ## Contributors:
-[![contrib]](https://contrib.rocks/image?repo=Shadowproxynetwork/Shadownetwork)
+[![Contrib](https://contrib.rocks/image?repo=Shadowproxynetwork/Shadownetwork)](https://github.com/Shadowproxynetwork/Shadownetwork/graphs/contributors)
 
 
 ## Deployment
