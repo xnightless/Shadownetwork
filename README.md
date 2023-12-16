@@ -18,6 +18,8 @@
 - Snorlax
 - Salamander
 - Potato
+- Wave Demure
+- 
 
 
 
