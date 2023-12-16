@@ -18,7 +18,7 @@
 - Snorlax
 - Salamander
 - Potato
-- Wave Demure
+- <img src="https://avatars.githubusercontent.com/u/144980384?s=400&u=be895c738e2ac8e1a78afc3e146668991fa1444c&v=4"></img>Wave Demure
 - Juinior
 - thebro57
 
