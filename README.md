@@ -1,13 +1,13 @@
-# Shadow Network V1 A fast tab cloaking with hundreds of games to play and apps
+# Shadow Network (V1)
 ## Features:
 - Advanced Tab Cloaking
-- Advanced About:Blank Cloaking (prevents site from showing on browser history)
-- Tons of customizable features (Themes, custom background, etc.)
+- Advanced "about:blank" cloaking (prevents site from showing on browser history)
+- Tons of customizable features (themes, custom background, etc.)
 - Simple and clean UI
 - Fast speeds
 - All kinds of proxys around the world
-- Tons of Apps & Games
-- Best themes, and backrounds
+- Tons of apps & games
+- Best built-in themes, and backgrounds
 - Best proxy alive
 - Most useful Methods and Cheats
 - Widgetbot 
