@@ -15,7 +15,7 @@ A crazy fast proxy with hundreds of games to play, apps, and even an advanced ta
 [![Contrib](https://contrib.rocks/image?repo=Shadowproxynetwork/Shadownetwork)](https://github.com/Shadowproxynetwork/Shadownetwork/graphs/contributors)
 
 
-## Deployment
+## Deployment:
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/template/h7StcI?referralCode=u82tqg)
 <a href="https://render.com/deploy?repo=https://github.com/Shadowproxynetwork/Shadownetwork">
 <img src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/render.svg"></img></a>
