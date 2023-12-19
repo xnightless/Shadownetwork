@@ -3,11 +3,11 @@
 - Advanced Tab Cloaking
 - Advanced About:Blank Cloaking (prevents site from showing on browser history)
 - Tons of customizable features (Themes, custom background, etc.)
-- Extremely clean UI
+- Simple and clean UI
 - Fast speeds
 - All kinds of proxys around the world
 - Tons of Apps & Games
-- Best theme backround
+- Best themes, and backrounds
 - Best proxy alive
 - Most useful Methods and Cheats
 - Widgetbot 
