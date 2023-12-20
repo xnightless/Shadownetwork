@@ -6,72 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
       image: "/assets/media/icons/request.webp",
       categories: ['all'],
       error: false
+    
     },
     {
-      name: "Amazon Luna",
-      link: "https://luna.amazon.com/",
-      image: "/assets/media/icons/amazon-luna.png",
-      categories: ['all'],
-      blank: "true",
-      error: false
-    },
-    {
-      name: "Dynast.io",
-      link: "https://dynast.io",
-      image: "/assets/media/icons/dynast-io.png",
-      categories: ['all', '2P'],
-      error: false
-    },
-   
-    {
-      name: "Brain Test",
-      link: "https://0322484b-7a58-4454-9667-f805afffded5.poki-gdn.com/2e6b68d3-0f43-4b84-9c14-ab59f94e566c/index.html?country=US&ccpaApplies=0&url_referrer=https%3A%2F%2Fpoki.com%2F&tag=pg-v3.132.1&site_id=3&iso_lang=en&poki_url=https%3A%2F%2Fpoki.com%2Fen%2Fg%2Fbrain-test-tricky-puzzles&gdhoist=yes&nonPersonalized=n&familyFriendly=n&categories=7%2C16%2C37%2C72%2C96%2C400%2C832%2C843%2C1140%2C1150%2C1159&special_condition=landing&game_id=0322484b-7a58-4454-9667-f805afffded5&game_version_id=2e6b68d3-0f43-4b84-9c14-ab59f94e566c",
-      image: "/assets/media/icons/braintest.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Gladihoppers",
-      link: "https://bonbang.github.io/store99/gladihoppers/index.html",
-      image: "/assets/media/icons/gladihoppers.jpg",
-      categories: ["all"],
-      error: false
-    },
-    {
-      name: "ev.io",
-      link: "https://ev.io",
-      image: "/assets/media/icons/evio.jpg",
-      categories: ["all", "2P"],
-      error: false
-    },
-    {
-      name: "Brain Test 2",
-      link: "https://games.poki.com/458768/df221093-aae9-4c0d-b458-efb16ae8e3ab",
-      image: "/assets/media/icons/braintest.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Brain Test 3",
-      link: "https://games.poki.com/458768/1f3ae540-a95f-4f20-a000-29512612e341",
-      image: "/assets/media/icons/braintest3.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Donitz - itch.io",
-      link: "https://donitz.itch.io/",
-      image: "/assets/media/icon/itch.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Territorial.io",
-      link: "https://territorial.io",
-      image: "/assets/media/icons/territorialio.ico",
-      categories: ['all', '2P'],
-    },
-    {
+     
+    
       name: "Stickman Hook",
       link: "/edu/stickman-hook/index.html",
       image: "/assets/media/icons/stickmanhook.jpg",
@@ -121,74 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Learn to Fly 3",
-      link: "https://www.silvergames.com/en/learn-to-fly-3/iframe",
-      image: "/assets/media/icons/learntofly3.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Neal.Fun",
-      link: "https://neal.fun",
-      image: "/assets/media/icons/nealfun.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "YoHoHo.io",
-      link: "https://yohoho.io/",
-      image: "/assets/media/icons/yohoho.webp",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
-      name: "Tetr.io",
-      link: "https://tetr.io/",
-      image: "/assets/media/icons/tetrio.ico",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
+  
+    
       name: "Time Shooter 2",
       link: "https://html5.gamedistribution.com/62a72f2da7cb4b609579a47653546e6a/",
       image: "/assets/media/icons/timeshooter2.jpeg",
       categories: ['all'],
       error: false
-    },
-    {
-      name: "Merge Fruit",
-      link: "https://html5.gamedistribution.com/2dee9d404697435aa76111eb4015e1d5/",
-      image: "/assets/media/icons/mergefruit.jpeg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "There Is No Game",
-      link: "https://5dd2d607-015f-11ea-ad56-9cb6d0d995f7.poki-gdn.com/38959ae1-110b-49ab-86ae-df425fd7862a/index.html",
-      image: "/assets/media/icons/thereisnogame.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Jetpack Joyride",
-      link: "/edu/jetpack-joyride/index.html",
-      image: "/assets/media/icons/jetpackjoyride.png",
-      categories: ['all', 'local'],
-      local: "true"
-    },
-    {
-      name: "FeedVid",
-      link: "https://v6p9d9t4.ssl.hwcdn.net/html/4941980-683813/index.html",
-      image: "/assets/media/icons/feedvid.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "florr.io",
-      link: "https://florr.io",
-      image: "/assets/media/icons/florr.jpg",
-      categories: ['all', '2P'],
-      error: false
+  
     },
     {
       name: "Rocket Bot Royale",
@@ -205,116 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Papa's Burgeria",
-      link: "https://www.coolmathgames.com/0-papas-burgeria/play",
-      image: "/assets/media/icons/papasburgeria.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Papa's Cheeseria",
-      link: "https://www.coolmathgames.com/0-papas-cheeseria/play",
-      image: "/assets/media/icons/papascheeseria.webp",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Papa's Pancakeria",
-      link: "https://www.coolmathgames.com/0-papas-pancakeria/play",
-      image: "/assets/media/icons/papaspancakeria.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Papa's Wingeria",
-      link: "https://www.coolmathgames.com/0-papas-wingeria/play",
-      image: "/assets/media/icons/papaswingeria.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Riddle School 1",
-      link: "https://uploads.ungrounded.net/ruffle_wrapper/ruffleembed.html?v=1.0.67&browsermode=default&props=%7B%22ruffle%22%3A%22%2Fruffle_wrapper%2Flib%2Fruffle.js%3F1695474658%22%2C%22public_path%22%3A%22%2Fruffle_wrapper%2Flib%2F%22%2C%22swf%22%3A%22https%3A%2F%2Fuploads.ungrounded.net%2F314000%2F314680_Riddle_School.swf%3F1148577264%22%2C%22vars%22%3A%7B%22NewgroundsAPI_PublisherID%22%3A1%2C%22NewgroundsAPI_SandboxID%22%3A%2265103f0745c96%22%2C%22NewgroundsAPI_SessionID%22%3A%22%22%2C%22NewgroundsAPI_UserName%22%3A%22%26lt%3Bdeleted%26gt%3B%22%2C%22NewgroundsAPI_UserID%22%3A0%2C%22ng_username%22%3A%22%26lt%3Bdeleted%26gt%3B%22%7D%2C%22width%22%3A550%2C%22height%22%3A400%2C%22icon%22%3A%22https%3A%2F%2Fpicon.ngfiles.com%2F314000%2Fflash_314680_card.png%3Ff1607914286%22%2C%22warnOnUnsupportedContent%22%3Afalse%7D",
-      image: "/assets/media/icons/riddleschool1.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Powerline.IO",
-      link: "https://powerline.io",
-      image: "/assets/media/icons/powerline.jpg",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
-      name: "Papa's Scooperia",
-      link: "https://files.crazygames.com/ruffle/papasscooperia.html",
-      image: "/assets/media/icons/papasscooperia.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Papa's Sushiria",
-      link: "https://files.crazygames.com/ruffle/papassushiria.html",
-      image: "/assets/media/icons/papassushiria.webp",
-      categories: ['all'],
-      error: false
-    },
-    {
       name: "Eaglercraft 1.5.2",
       link: "https://interstellar-assets.pages.dev/minecraft-15/",
       image: "/assets/media/icons/mc.webp",
       categories: ['all', '2P'],
       error: false
-    },
-    {
-      name: "Burrito Bison",
-      link: "https://f.silvergames.com/awayfl/index.html?swf=burrito-bison.swf",
-      image: "/assets/media/icons/burritobison.webp",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Gunspin",
-      link: "https://html5.gamedistribution.com/rvvASMiM/917cce8c44c44638a8cdc2a1794b65c8/index.html",
-      image: "/assets/media/icons/gunspin.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Thelast Royale",
-      link: "https://thelast.io",
-      image: "/assets/media/icons/thelast-io.png",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
-      name: "mope.io",
-      link: "https://thelast.io",
-      image: "/assets/media/icons/mope-io.jpg",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
-      name: "Tiny Fishing",
-      link: "https://www.dob5.com/d/file/games/tiny-fishing/",
-      image: "/assets/media/icons/tinyfishing.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Johnny Upgrade",
-      link: "https://lagged.com/api/play2/johnny-upgrade3/",
-      image: "/assets/media/icons/johnnyupgrade.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "bloxd.io",
-      link: "https://bloxd.io",
-      image: "/assets/media/icons/bloxd-io.jpg",
-      categories: ['all', '2P'],
-      error: false
+    
     },
     {
       name: "Duck Life 1",
@@ -345,13 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Papa's Freezeria",
-      link: "https://www.coolmathgames.com/0-papas-freezeria/play",
-      image: "/assets/media/icons/papasfreezeria.png",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
+  
       name: "Evades",
       link: "https://evades.io",
       image: "/assets/media/icons/evadesio.webp",
@@ -415,12 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Itch.io",
-      link: "https://itch.io",
-      image: "/assets/media/icons/itch.png",
-      categories: ['all,', 'emu,', '2P'],
-      error: false
-    },
             {
       name: "N-Gon",
       link: "https://landgreen.github.io/sidescroller/",
@@ -450,13 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Run 3",
-      link: "https://www.coolmathgames.com/0-run-3/play",
-      image: "/assets/media/icons/run3.png",
-      categories: ['all,', 'flash'],
-      error: false
-    },
-    {
+     
       name: "Subway Surfers: San Francisco ",
       link: "https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html",
       image: "/assets/media/icons/SF.webp",
@@ -1425,13 +1182,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       },
       {
-        name: "Roblox (Now.GG Alternative)",
-        link: "https://nowgg.nl/play/roblox-corporation/5349/roblox",
-        image: "/assets/media/icons/roblox.png",
-        categories: ['all', 'emu']
-      },
-      {
-        name: "Now.GG (Alternative)",
+        name: "Now.GG 
         link: "https://nowgg.nl",
         image: "/assets/media/icons/now-gg.png",
         categories: ['all', 'emu']
