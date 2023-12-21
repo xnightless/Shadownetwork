@@ -32,27 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Rainbow Obby",
-      link: "https://785a4295-96c4-43e5-b237-fb07fc3ef44d.poki-gdn.com/f1d39f75-7a25-41de-86cf-ba00804737b5/index.html",
-      image: "/assets/media/icons/rainbowobby.webp",
-      categories: ['all', '2P'],
-      error: false
-    },
-    {
-      name: "Candy Jump",
-      link: "https://candyjump.games235.com/",
-      image: "/assets/media/icons/candyjump.jpg",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Google Feud",
-      link: "https://googlefeud.com/",
-      image: "/assets/media/icons/googlefeud.png",
-      categories: ['all'],
-      error: false
-    },
-    {
+ 
       name: "Minecraft Classic",
       link: "https://classic.minecraft.net",
       image: "/assets/media/icons/mc.webp",
@@ -142,78 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
       error: false
     },
     {
-      name: "Cubes 2048",
-      link: "https://www.crazygames.com/game/cubes-2048-io",
-      image: "/assets/media/icons/C2048.jpg",
-      categories: ['all,', '2P'],
-      error: false
-    },
-              {
-      name: "DOOM",
-      link: "https://archive.org/details/doom-play",
-      image: "/assets/media/icons/DOOM.jpg",
-      categories: ['all,', 'emu'],
-      error: false
-    },
-    {
-      name: "FNAF 2",
-      link: "https://sussygamedeveloper.github.io/FNAF2/",
-      image: "/assets/media/icons/FNAF2.webp",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "FNAF 3",
-      link: "https://sussygamedeveloper.github.io/fnaf3/",
-      image: "/assets/media/icons/FNAF3.webp",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "FNAF Web",
-      link: "https://wellsousaaa.github.io/Five-Nights-at-Freddys-Web/",
-      image: "/assets/media/icons/FNAFWeb.webp",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "GBA Emulator",
-      link: "https://ds.44670.org/gba/",
-      image: "/assets/media/icons/gba.jpg",
-      categories: ['all,', 'emu'],
-      error: false
-    },
-    {
-            {
-      name: "N-Gon",
-      link: "https://landgreen.github.io/sidescroller/",
-      image: "/assets/media/icons/NGON.png",
-      categories: ['all'],
-      error: false
-    },
-    {
-      name: "Nintendo DS Emulator",
-      link: "https://ds.44670.org/",
-      image: "/assets/media/icons/ds.png",
-      categories: ['all,', 'emu'],
-      error: false
-    },
-        {
-      name: "Nintendo 64 Emulator",
-      link: "https://www.neilb.net/n64wasm/",
-      image: "/assets/media/icons/N64.png",
-      categories: ['all,', 'emu'],
-      error: false
-    },
-        {
-      name: "Playstation 2 Emulator",
-      link: "https://playjs.purei.org/",
-      image: "/assets/media/icons/PS2.webp",
-      categories: ['all,', 'emu'],
-      error: false
-    },
-    {
-     
+ 
       name: "Subway Surfers: San Francisco ",
       link: "https://raw.githack.com/3kh0/3kh0-assets/main/subway-surfers/index.html",
       image: "/assets/media/icons/SF.webp",
@@ -301,27 +210,6 @@ document.addEventListener('DOMContentLoaded', () => {
     name: "8 Ball Pool",
     link: "https://8ball-pool.io",
     image: "/assets/media/icons/8ball.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "A Dark Room",
-    link: "https://adarkroom.doublespeakgames.com",
-    image: "/assets/media/icons/ADR.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Ace Attorney",
-    link: "https://f.kbhgames.com/r/gba/?r=ace-attorney",
-    image: "/assets/media/icons/aa.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "AC - Wild World",
-    link: "https://static.arcadespot.com/retroemulator.php?system=nds&game=2017/10/animal-crossing-wild-world1.zip",
-    image: "/assets/media/icons/acww.webp",
     categories: ['all'],
     error: false
  
