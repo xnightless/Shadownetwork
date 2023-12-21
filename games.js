@@ -502,115 +502,10 @@ document.addEventListener('DOMContentLoaded', () => {
         error: false
       },
       {
-        name: "Haunted School 1",
-        link: "https://games.crazygames.com/en_US/haunted-school---horror-game/index.html",
-        image: "/assets/media/icons/na.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Helixteus 3",
-        link: "https://hole-io.com/",
-        image: "/assets/media/icons/helixteus.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Hole.IO",
-        link: "https://hole-io.com/",
-        image: "/assets/media/icons/hole.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Idle Breakout",
-        link: "https://interstellarnetwork.github.io/Interstellar-Assets/play/idle-breakout/index.html",
-        image: "/assets/media/icons/idle.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Isleward",
-        link: "https://play.isleward.com",
-        image: "/assets/media/icons/isleward.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Interactive Buddy",
-        link: "https://f.silvergames.com/ruffle/player.php?id=204",
-        image: "/assets/media/icons/interactive-buddy.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "NGU Idle",
-        link: "https://cache.armorgames.com/files/games/ngu-idle-18444/index.html?v=1559319416",
-        image: "/assets/media/icons/nguidle.jpg",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Jacksmith",
-        link: "https://www.coolmathgames.com/0-jacksmith/play",
-        image: "/assets/media/icons/jacksmith.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Sandtrix",
-        link: "https://files.crazygames.com/sandtrix/16/index.html",
-        image: "/assets/media/icons/sandtrix.jpg",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Learn To Fly Idle",
-        link: "https://www.gameslol.net/data/waflash/index.php?g=635",
-        image: "/assets/media/icons/ltf_idle.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Lordz.io",
-        link: "https://lordz.io/",
-        image: "/assets/media/icons/lordz.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
-        name: "Masked IO",
-        link: "https://unblocked-games.s3.amazonaws.com/games/masked-io/index.html",
-        image: "/assets/media/icons/masked-forces.webp",
-        categories: ["all"],
-        error: false
-      },
-      {
         name: "Mario Kart 64",
         link: "https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/06/mario-kart-64.zip",
         image: "/assets/media/icons/mario-kart-64.webp",
         categories: ["all"],
-        error: false
-      },
-      {
-        name: "Mobs Inc",
-        link: "https://overboy.itch.io/mobs-inc",
-        image: "/assets/media/icons/mobsinc.webp",
-        categories: ["all"],
-        error: false
-      },  
-      {
-        name: "Monkey Mart",
-        link: "/edu/monkey-mart/index.html",
-        image: "/assets/media/icons/mm.webp",
-        categories: ['all', 'local'],
-        local: "true"
-      },
-      {
-        name: "MooMoo.io",
-        link: "https:/moomoo.io",
-        image: "/assets/media/icons/moo.webp",
-        categories: ['all'],
         error: false
       },
       {
@@ -621,139 +516,7 @@ document.addEventListener('DOMContentLoaded', () => {
         error: false
       },
       {
-        name: "Mr.Mine",
-        link: "https://www.coolmathgames.com/0-mr-mine/play",
-        image: "/assets/media/icons/mrmine.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Moto X3M",
-        link: "https://html5.gamedistribution.com/rvvASMiM/5b0abd4c0faa4f5eb190a9a16d5a1b4c/index.html",
-        image: "/assets/media/icons/mx3m.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "MX3M: Pool Party",
-        link: "https://h0jokl1egt0fd4oc8qv3j0tltl9jbqhn-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://649025137-174029463385024710.preview.editmysite.com/uploads/b/139890129-767696982876512205/files/mx3mpp.xml",
-        image: "/assets/media/icons/mx3m.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "MX3M: Spooky Land",
-        link: "https://html5.gamedistribution.com/rvvASMiM/b8a342904608470a9f3382337aca3558/index.html",
-        image: "/assets/media/icons/mx3m-spooky.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "MX3M: Winter",
-        link: "https://www-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://sites.google.com/site/s017q3e/moto-x3m-4-winter.xml",
-        image: "/assets/media/icons/mx3m-winter.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Saul Run",
-        link: "https://complex-ify.itch.io/saul-goodman",
-        image: "/assets/media/icons/saulrun.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "NG Space Company",
-        link: "https://interstellarnetwork.github.io/interstellar-assets/play/ng-space-company/frontend/dist/index.html",
-        image: "/assets/media/icons/ng.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Ninja Cat Exploit",
-        link: "https://html5.gamedistribution.com/rvvASMiM/903ba9346b9d437e9c7e81d672cead44/index.html",
-        image: "/assets/media/icons/ninja-cat.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "OvO",
-        link: "https://8rlfg0ch3417et18dp8lvps6uo7c3b2c-a-sites-opensocial.googleusercontent.com/gadgets/ifr?url=https://427396048-642845047394716217.preview.editmysite.com/uploads/b/139890129-761103484729797659/files/ovo.xml",
-        image: "/assets/media/icons/ovo.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Online Racing Game!",
-        link: "https://jchabin.github.io/cars/",
-        image: "/assets/media/icons/OR.png",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Online Soccer M.",
-        link: "https://www.onlinesoccermanager.com/",
-        image: "/assets/media/icons/osm.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Papa's Bakeria",
-        link: "https://f.silvergames.com/emu/waffle/?id=5458",
-        image: "/assets/media/icons/bakeria.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Papa's Cupcakeria",
-        link: "https://f.silvergames.com/emu/waffle/?id=3246",
-        image: "/assets/media/icons/cupcakeria.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Papa Louie 1",
-        link: "https://f.silvergames.com/ruffle/player.php?id=1373",
-        image: "/assets/media/icons/louie1.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Papa Louie 2",
-        link: "https://f.silvergames.com/emu/waffle/?id=3042",
-        image: "/assets/media/icons/louie2.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Papa Louie 3",
-        link: "https://f.silvergames.com/emu/waffle/?id=4693",
-        image: "/assets/media/icons/papa-louie-3.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Papa's Pizzeria",
-        link: "https://f.silvergames.com/ruffle/player.php?id=1360",
-        image: "/assets/media/icons/pizzeria.webp",
-        categories: ['all'],
-        error: false
-      },
-      {
-        name: "Paper Mario 64",
-        link: "https://f.kbhgames.com/r/n64/game.php?file=Paper%20Mario%20(USA).zip",
-        image: "/assets/media/icons/paper-mario-64.webp",
-        categories: ['all'],
-        error: false
-      },    
-      {
-    name: "Paper Mario 64",
-    link: "https://f.kbhgames.com/r/n64/game.php?file=Paper%20Mario%20(USA).zip",
-    image: "/assets/media/icons/paper-mario-64.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
+     
     name: "Paper.io",
     link: "https://paper-io.com/",
     image: "/assets/media/icons/paperio.webp",
@@ -810,86 +573,9 @@ document.addEventListener('DOMContentLoaded', () => {
     error: false
   },
   {
-    name: "Red Ball 1",
-    link: "https://www.algebrashelper.com/redball",
-    image: "/assets/media/icons/redball1.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Red Ball 2",
-    link: "https://www.algebrashelper.com/redball-2",
-    image: "/assets/media/icons/redball2.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Red Ball 4",
-    link: "https://www.algebrashelper.com/redball-4",
-    image: "/assets/media/icons/redball4.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Red Ball 4 Vol. 2",
-    link: "https://www.algebrashelper.com/read-ball-4v2",
-    image: "/assets/media/icons/redball4vol2.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Red Ball 4 Vol. 3",
-    link: "https://www.algebrashelper.com/red-ball-4v3",
-    image: "/assets/media/icons/redball4vol3.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Retro Arch",
-    link: "https://binbashbanana.github.io/webretro/",
-    image: "/assets/media/icons/retroarch.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Riddle School 2",
-    link: "https://f.silvergames.com/ruffle/player.php?id=8564",
-    image: "/assets/media/icons/rs1.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Rocket Pult",
-    link: "https://v6p9d9t4.ssl.hwcdn.net/html/565140/index.html",
-    image: "/assets/media/icons/rocketpult.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
     name: "Rooftop Snipers",
     link: "https://html5.gamedistribution.com/rvvASMiM/c3a70ae98547407a92ebedca8b79fdfa/index.html",
     image: "/assets/media/icons/rooftop.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Sand Spiel",
-    link: "https://sandspiel.club/",
-    image: "/assets/media/icons/sand.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Sandboxels",
-    link: "https://v6p9d9t4.ssl.hwcdn.net/html/5808591/index.html",
-    image: "/assets/media/icons/sandboxels.webp",
-    categories: ['all'],
-    error: false
-  },
-  {
-    name: "Shapez.IO",
-    link: "https://shapez.io",
-    image: "/assets/media/icons/shapezio.webp",
     categories: ['all'],
     error: false
   },
@@ -1028,7 +714,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       name: "Vex 7",
-      link: "https://interstellarnetwork.github.io/interstellar-assets/play/vex7/index.html",
+      link: "https://vex7.io",
       image: "/assets/media/icons/vex7.webp",
       categories: ['all'],
       error: false
