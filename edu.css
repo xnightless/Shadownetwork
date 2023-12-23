@@ -1,0 +1,33 @@
+.game-diver {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 400px;
+    margin-top: 6vh;
+}
+
+.app-div {
+    border-radius: 5px;
+}
+
+.app-p {
+    background-color: #000000;
+    padding: 15vh 2vw;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10%;
+    width: 500px;
+    transition: 0.5s;   
+}
+
+.app-img {
+    width: 20vh;    
+    border-radius: 20px;
+    padding-top: 5px;   
+}
+
+.app-para {
+    color: white;
+    font-size: 5dvb;
+}
