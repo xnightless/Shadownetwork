@@ -70,23 +70,38 @@
   },100);
 </script>
 <script>
-window.addEventListener('load', function () {
-  var currentUrl = window.location.href;
-  if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
-    if (window.open('', '_blank')) {
-      sessionStorage.setItem('tabOpened', 'true');
-      var win = window.open('about:blank', '_blank');
-      win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
-      win.onbeforeunload = function () {
-        sessionStorage.removeItem('tabOpened');
-      };
-      window.close();
-    } else if (!sessionStorage.getItem('alertShown')) {
-      alert("Please enable pop-ups for auto about:blank cloaking to work.");
-      sessionStorage.setItem('alertShown', 'true');
+    function checkPopups() {
+      var newWin = window.open("", "", "width=100, height=100");
+      if (newWin) {
+        newWin.close();
+        return true;
+      } else {
+        say1();
+        return false;
+      }
     }
-  }
-});
+
+    function say1() {
+      alert("HELL0! for auto cloaking in about:blank please allow pop ups!");
+    }
+
+    window.addEventListener('load', function () {
+      var currentUrl = window.location.href;
+      var bgUrl = localStorage.getItem('backgroundImage');
+      if (currentUrl !== "about:blank" && !sessionStorage.getItem('tabOpened')) {
+        if (checkPopups()) {
+          sessionStorage.setItem('tabOpened', 'true');
+          var win = window.open('about:blank', '_blank');
+          win.document.write("<html style='height:100%; margin:0; padding:0;'><body style='height:100%; margin:0; padding:0;'><iframe src='" + currentUrl + "' style='width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;'></iframe></body></html>");
+          win.onbeforeunload = function () {
+            sessionStorage.removeItem('tabOpened');
+          };
+          window.close();
+        } else if (!sessionStorage.getItem('alertShown')) {
+          sessionStorage.setItem('alertShown', 'true');
+        }
+      }
+    });
 </script>
 <script>
   window.addEventListener('keydown', (event) => {
