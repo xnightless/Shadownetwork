@@ -14,7 +14,7 @@ COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install --production
 
 # Expose the port that the application will run on
-EXPOSE 8000
+EXPOSE 8080
 
 # Copy the entire application code to the container
 COPY . .
