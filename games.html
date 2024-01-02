@@ -1,345 +1,139 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-<head>
-       <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description"
-        content="Shadow Network,About
-Experience the global internet using Shadow,the fastest Proxy in the world The best looking proxy there is with Apps and tab cloaking and over 100+ games for students surf the webwith blazing speeds without worry!" />
-	<meta charset="utf-8">
-	<title>1v1.LOL | Building Simulator, Battle Royale & Shooting Game</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
 </head>
+<body onload="startGame()">
+<script>
 
-<body>
-	<div id="generalModal" class="modal">
-		<div id="generalModalContent" class="modalContent"></div>
-	</div>
+var myGamePiece;
+var myObstacles = [];
+var myScore;
 
-	<div id="gameContainer"></div>
-	<div id="loader">
-		<img class="logo" src="logo.png">
-		<div class="spinner"></div>
-		<div class="progress">
-			<div class="full"></div>
-		</div>
-	</div>
+function startGame() {
+    myGamePiece = new component(30, 30, "red", 10, 120);
+    myGamePiece.gravity = 0.05;
+    myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    myGameArea.start();
+}
 
+var myGameArea = {
+    canvas : document.createElement("canvas"),
+    start : function() {
+        this.canvas.width = 480;
+        this.canvas.height = 270;
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+        this.frameNo = 0;
+        this.interval = setInterval(updateGameArea, 20);
+        },
+    clear : function() {
+        this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    }
+}
 
-	<script>
-		/* View in fullscreen */
-		var elem = document.documentElement;
-		function openFullscreen() {
-			if (elem.requestFullscreen) {
-				elem.requestFullscreen();
-			} else if (elem.mozRequestFullScreen) { /* Firefox */
-				elem.mozRequestFullScreen();
-			} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-				elem.webkitRequestFullscreen();
-			} else if (elem.msRequestFullscreen) { /* IE/Edge */
-				elem.msRequestFullscreen();
-			}
-		}
-
-		/* Close fullscreen */
-		function closeFullscreen() {
-			if (document.exitFullscreen) {
-				document.exitFullscreen();
-			} else if (document.mozCancelFullScreen) { /* Firefox */
-				document.mozCancelFullScreen();
-			} else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-				document.webkitExitFullscreen();
-			} else if (document.msExitFullscreen) { /* IE/Edge */
-				document.msExitFullscreen();
-			}
-		}
-
-		function updateFullscreen() {
-			var isInFullScreen = (document.fullscreenElement && document.fullscreenElement !== null) ||
-				(document.webkitFullscreenElement && document.webkitFullscreenElement !== null) ||
-				(document.mozFullScreenElement && document.mozFullScreenElement !== null) ||
-				(document.msFullscreenElement && document.msFullscreenElement !== null);
-			if (!isInFullScreen)
-				openFullscreen();
-			else
-				closeFullscreen();
-		}
-		window.rWS = WebSocket;
-		WebSocket = function(url, options) {
-			var split = url.split('://');
-		
-			var prefix = '';
-			switch (split[0].toLowerCase()) {
-				case 'ws':
-					prefix = 'wss://onebigorange-tmm.tbt.mx/websocket/http://';
-					break;
-				case 'wss':
-					prefix = 'wss://onebigorange-tmm.tbt.mx/websocket/https://';
-					break;
-				default:
-					prefix = split[0];
-			}
-			return new(Function.prototype.bind.call(window.rWS, null, (split[1].match(/\//g) || []).length === 0 ? (split[1].includes('?') ? prefix + split[1].replace('?', '/?') : prefix + split[1] + '/') : prefix + split[1], options));
-		};
-		window.staticEndpoint = 'thesuperstatic.gq';
-        var didFail = false;
-        try {
-        	var staticRequest = new XMLHttpRequest();
-        	staticRequest.open('GET', 'https://thesuperstatic.gq/cc', false);
-        	staticRequest.send();
-            if (staticRequest.responseText !== 'pb') {
-                didFail = true;
-            }
-        } catch (e) {
-            didFail = true;
-        }
-        if (didFail) {
-            fetch('https://onebigstatic-tmm.tbt.mx/counter/increment?tag=' + encodeURIComponent('onebigstatic'));
-            window.staticEndpoint = 'onebigstatic-tmm.tbt.mx';
+function component(width, height, color, x, y, type) {
+    this.type = type;
+    this.score = 0;
+    this.width = width;
+    this.height = height;
+    this.speedX = 0;
+    this.speedY = 0;    
+    this.x = x;
+    this.y = y;
+    this.gravity = 0;
+    this.gravitySpeed = 0;
+    this.update = function() {
+        ctx = myGameArea.context;
+        if (this.type == "text") {
+            ctx.font = this.width + " " + this.height;
+            ctx.fillStyle = color;
+            ctx.fillText(this.text, this.x, this.y);
         } else {
-            fetch('https://onebigstatic-tmm.tbt.mx/counter/increment?tag=' + encodeURIComponent('thesuperstatic'));
+            ctx.fillStyle = color;
+            ctx.fillRect(this.x, this.y, this.width, this.height);
         }
-		var origOpen = XMLHttpRequest.prototype.open;
-		XMLHttpRequest.prototype.open = function(...args) {
-			args[1] = /^http/.test(args[1]) ? 'https://' + window.staticEndpoint + '/static/' + args[1] : args[1];
-			args[1] = args[1].replace(/ /g, '%2520').replace(/%20/g, '%2520');
-			origOpen.apply(this, args);
-		};
-		window.versionPrefix = (function(){let request=new XMLHttpRequest();origOpen.call(request,'GET','https://onebigstatic-tmm.tbt.mx/shortstatic/https://1v1.lol/',false);request.send();return request.responseText})().match(/https:\/\/justbuild\.nyc3\.cdn\.digitaloceanspaces\.com\/[^"]+\//)[0]
-		document.write('<script id="unity-loader" src="https://' + window.staticEndpoint + '/static/' + window.versionPrefix + 'UnityLoader.js"><\/script>');
-		function requestNewAd(){gameInstance.SendMessage('AdsManager', 'OnWebCallback')}
-	</script>
+    }
+    this.newPos = function() {
+        this.gravitySpeed += this.gravity;
+        this.x += this.speedX;
+        this.y += this.speedY + this.gravitySpeed;
+        this.hitBottom();
+    }
+    this.hitBottom = function() {
+        var rockbottom = myGameArea.canvas.height - this.height;
+        if (this.y > rockbottom) {
+            this.y = rockbottom;
+            this.gravitySpeed = 0;
+        }
+    }
+    this.crashWith = function(otherobj) {
+        var myleft = this.x;
+        var myright = this.x + (this.width);
+        var mytop = this.y;
+        var mybottom = this.y + (this.height);
+        var otherleft = otherobj.x;
+        var otherright = otherobj.x + (otherobj.width);
+        var othertop = otherobj.y;
+        var otherbottom = otherobj.y + (otherobj.height);
+        var crash = true;
+        if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+            crash = false;
+        }
+        return crash;
+    }
+}
 
-	<!--<script id="unity-loader" src="https://onebigstatic-tmm.tbt.mx/static/https://justbuild.nyc3.cdn.digitaloceanspaces.com/CI/27/UnityLoader.js"></script>-->
-    <script>
-		var gameJsonUrl = window.versionPrefix + "WebGL.json"; //%gameJsonUrl
-        var gameInstance = UnityLoader.instantiate("gameContainer", gameJsonUrl, {onProgress: UnityProgress});
-        //var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
-		var lockedOccured = false;
+function updateGameArea() {
+    var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+    for (i = 0; i < myObstacles.length; i += 1) {
+        if (myGamePiece.crashWith(myObstacles[i])) {
+            return;
+        } 
+    }
+    myGameArea.clear();
+    myGameArea.frameNo += 1;
+    if (myGameArea.frameNo == 1 || everyinterval(150)) {
+        x = myGameArea.canvas.width;
+        minHeight = 20;
+        maxHeight = 200;
+        height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+        minGap = 50;
+        maxGap = 200;
+        gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+        myObstacles.push(new component(10, height, "green", x, 0));
+        myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+    }
+    for (i = 0; i < myObstacles.length; i += 1) {
+        myObstacles[i].x += -1;
+        myObstacles[i].update();
+    }
+    myScore.text="SCORE: " + myGameArea.frameNo;
+    myScore.update();
+    myGamePiece.newPos();
+    myGamePiece.update();
+}
 
-		function UnityProgress(gameInstance, progress) {
-			if (!gameInstance.Module) {
-				return;
-			}
-			const loader = document.querySelector("#loader");
-			if (!gameInstance.progress) {
-				const progress = document.querySelector("#loader .progress");
-				progress.style.display = "block";
-				gameInstance.progress = progress.querySelector(".full");
-				loader.querySelector(".spinner").style.display = "none";
-			}
-			gameInstance.progress.style.transform = `scaleX(${progress})`;
-			if (progress === 1 && !gameInstance.removeTimeout) {
-				loader.style.display = "none";
-				gameLoaded = true;
-			}
-		}
+function everyinterval(n) {
+    if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+    return false;
+}
 
-		document.onkeydown = function (e) {
-			if (e.altKey || e.ctrlKey || e.key == "F1" || e.key == "F2" || e.key == "F3" || e.key == "F4") {
-				e.preventDefault();
-			}
-		}
-
-		document.onmouseup = function (e) {
-			e.preventDefault();
-		}
-
-		document.addEventListener('pointerlockchange', lockChangeAlert, false);
-		document.addEventListener('mozpointerlockchange', lockChangeAlert, false);
-
-		function lockChangeAlert() {
-			if (!lockedOccured && document.pointerLockElement)
-				lockedOccured = true;
-			if (!document.pointerLockElement && lockedOccured){
-				lockedOccured = false;
-				gameInstance.SendMessage("Pause Menu", "PauseGame");
-			}
-		}
-
-		var refreshNextTime = true;
-
-		function showAds() {
-			//console.log("show ads");
-
-			document.getElementById("adRectangleTop").style.display = "block";
-			document.getElementById("adRectangleBottom").style.display = "block";
-			document.getElementById("adLeaderboardBottom").style.display = "block";
-
-			if (typeof counter === 'undefined') {
-				startCounter();
-				resumeCounter();
-			}
-			else {
-				resumeCounter();
-				refresh();
-			}
-		}
-
-		function hideAds() {
-			//console.log("hide ads");
-
-			document.getElementById("adRectangleTop").style.display = "none";
-			document.getElementById("adRectangleBottom").style.display = "none";
-			document.getElementById("adLeaderboardBottom").style.display = "none";
-
-			pauseCounter();
-		}
-
-		function refresh() {
-
-			//console.log("time since ads refresh = " + timeSinceRefresh + " seconds");
-			//console.log("time ads visible = " + timeAdsVisible + " seconds");
-
-			if (timeSinceRefresh <= 30 || timeAdsVisible <= 2) {
-				//console.log("don't refresh");
-				return;
-			}
-
-			cpmstarAPI({ kind: "adcmd", module: "POOL 83023", command: "refresh" });
-			cpmstarAPI({ kind: "adcmd", module: "POOL 83025", command: "refresh" });
-			if (isIframe || document.getElementsByTagName('body')[0].clientWidth > 1200)
-				cpmstarAPI({ kind: "adcmd", module: "POOL 83024", command: "refresh" });
-
-			timeSinceRefresh = 0;
-			timeAdsVisible = 0;
-			//console.log("refresh ads");
-		}
-
-		window.onfocus = function () {
-			//console.log("onfocus");
-			resumeCounter();
-			refresh();
-		};
-
-		window.onblur = function () {
-			//console.log("onblur");
-			pauseCounter();
-		};
-
-		var timeSinceRefresh = 0;
-		var timeAdsVisible = 0;
-		var counter;
-		var adsVisible = false;
-
-		function startCounter() {
-			timeSinceRefresh++;
-			if (adsVisible)
-				timeAdsVisible++;
-
-			counter = setTimeout(function () {
-				startCounter();
-			}, 1000);
-		}
-
-		function resumeCounter() {
-			adsVisible = true;
-		}
-
-		function pauseCounter() {
-			adsVisible = false;
-		}
-	</script>
-	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-
-	<!-- Add Firebase products that you want to use -->
-	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-firestore.js"></script>
-
-	<script src="firebase.js?v=%ciVersion%"></script>
-	<script src="login.js?v=%ciVersion%"></script>
-	<script src="fireStore.js?v=%ciVersion%"></script>
-
-	<script>
-		var hostname = window.location.hostname;
-		if(hostname.indexOf("dev1v1") >= 0 || hostname.indexOf("dev.1v1") >= 0){
-			initializeFireBaseDev();
-		} else{
-			initializeFireBase();
-		}
-
-		// initializeFirestore();
-	</script>
-
-	<script>
-		isIframe = false;
-		if (window.self != window.top) {
-			// isIframe = true;
-			function WindowResize() {
-				var v = window.innerWidth;
-				var maxRes = 1320;
-
-				if (v < maxRes) {
-					var ads = document.getElementsByClassName('ad');
-
-					for (const ad of ads) {
-						ad.style.transform = "scale(" + v / maxRes + ")";
-					}
-				}
-				else {
-					var ads = document.getElementsByClassName('ad');
-
-					for (const ad of ads) {
-						ad.style.transform = "scale(1)";
-					}
-				}
-			}
-			window.addEventListener("resize", WindowResize);
-			WindowResize();
-		}
-		else {
-			var styles = `
-    @media screen and (max-width: 1200px) { 
-		.ad-leaderboard-bottom {
-			display: none !important;
-		}
-	}
-`
-
-			var styleSheet = document.createElement("style")
-			styleSheet.type = "text/css"
-			styleSheet.innerText = styles
-			document.head.appendChild(styleSheet)
-		}
-		
-	</script>
-	<script>
-		function sleep(ms) 
-		{
-  			return new Promise(resolve => setTimeout(resolve, ms));
-		}
-
-		async function CheckAdBlock() 
-		{
-			await sleep(20000);
-			var adBlockEnabled = false;
-			var testAd = document.createElement('div');
-			testAd.innerHTML = '&nbsp;';
-			testAd.className = 'adsbox';
-			document.body.appendChild(testAd);
-			window.setTimeout(function() {
-			if (testAd.offsetHeight === 0) {
-				adBlockEnabled = true;
-			}
-			testAd.remove();
-			if(adBlockEnabled)
-			{
-				gameInstance.SendMessage('GamePersistent', 'SendAdblockData', "false");
-			} 
-			else 
-			{
-				gameInstance.SendMessage('GamePersistent', 'SendAdblockData', "false");
-			}		
-			}, 100);
-		}
-
-		CheckAdBlock();
-	
-	</script>
+function accelerate(n) {
+    myGamePiece.gravity = n;
+}
+</script>
+<br>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<p>Use the ACCELERATE button to stay in the air</p>
+<p>How long can you stay alive?</p>
 </body>
-
 </html>
+
+</script>
