@@ -1,21 +1,21 @@
-# Shadow Network V1 A fast tab cloaking with hundreds of games to play and apps
+# Shadow Network (V1)
+A crazy fast proxy with hundreds of games to play, apps, and even an advanced tab cloaker
 ## Features:
-- Advanced Tab Cloaking
-- Advanced About:Blank Cloaking (prevents site from showing on browser history)
-- Tons of customizable features (Themes, custom background, etc.)
-- Extremely clean UI
-- Fast speeds
-- All kinds of proxys around the world
-- Tons of Apps & Games
-- Best theme backround
-- Best proxy alive
-- Most useful Methods and Cheats
+- Advanced tab cloaking
+- Advanced "about:blank" cloaking (prevents site from showing on browser history)
+- Tons of customizable features (themes, custom background, etc.)
+- Simple and clean UI
+- Fast speeds on proxies and apps
+- Tons of apps & games
+- Best built-in themes, and backgrounds
+- Runs on the best proxy 
+- Very useful Methods and Cheats
 - Widgetbot 
 ## Contributors:
 [![Contrib](https://contrib.rocks/image?repo=Shadowproxynetwork/Shadownetwork)](https://github.com/Shadowproxynetwork/Shadownetwork/graphs/contributors)
 
 
-## Deployment
+## Deployment:
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/template/h7StcI?referralCode=u82tqg)
 <a href="https://render.com/deploy?repo=https://github.com/Shadowproxynetwork/Shadownetwork">
 <img src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/render.svg"></img></a>
