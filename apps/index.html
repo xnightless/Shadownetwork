@@ -1,0 +1,185 @@
+<h1 id="title1" class="title1">apps</h1>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<div id="particlebox"></div>
+<script src="/scripts/bg.js"></script>
+
+<div id="black" class="black"></div> <img src="/img/loading.gif" id="loadimg" class="loadimg"/> <style> @keyframes fadeout{ 0%{ opacity:1; pointer-events: none;} 100%{ opacity:0; display:none; }} .black{ position:absolute; left:0px; opacity:1; display:block; top:0px; width:100%; z-index:999999999999999999999999999999999999999999999; height:100%; } .loadimg{ position:absolute; opacity:1; display:block; width:125px; z-index:9999999999999999999999999999999999999999999999; height:125px; top:50%; left:50%; transform:translate(-50%, -50%); } </style> <script> function fade(){ document.getElementById("loadimg").style.animation="linear 1.5s 1 running fadeout"; document.getElementById("loadimg").addEventListener("animationend", () => { document.getElementById("black").style.animation="linear 1.5s 1 running fadeout"; document.getElementById("black").addEventListener("animationend", () => { document.getElementById("black").remove(); }); document.getElementById("loadimg").remove(); }); } setTimeout(fade,1200); </script> 
+<div class="buttons" align="center">
+  <div class="appcont">
+    <img class="apps" src="/img/youtube.png" onclick="youtube();"/>
+    <h4>Youtube</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="https://blogs.nvidia.com/wp-content/uploads/2021/02/GFN.png" onclick="gforce();"/>
+    <h4>GForce Now</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="/img/reddit.png" onclick="reddit();"/>
+    <h4>Reddit</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="/img/stack-overflow.png" onclick="stackoverflow();"/>
+    <h4>Stack Overflow</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="/img/githublogo.png" onclick="github();"/>
+    <h4>Github</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="/img/movie-web.png" onclick="mo();"/>
+    <h4>Movie Web</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="/img/insecurly.svg" onclick="is();"/>
+    <h4>Insecurly</h4>
+  </div>
+  <div class="appcont">
+    <img class="apps" src="/img/now.png" onclick="now();"/>
+    <h4>App Launcher</h4>
+  </div>
+</div>
+<style>
+  .bg{
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width:100%;
+    height:100%;
+  }
+  .buttons{
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    gap:20px;
+    height: 70%;
+    top: 30%;
+    justify-content:center;
+    flex-wrap:wrap;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    overflow-x:hidden;
+    overflow-y:scroll;
+  }
+  .title1{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top:7%;
+    float: center;
+    align: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .apps{
+    width: 100%;
+    height: 150px;
+    background:transparent;
+    color: #FFFFFF;
+  }
+  .appcont:hover{
+    background-color:#C0C0C0;
+    color:#C0C0C0;
+  }
+  .appcont{
+    width: 163px;
+    height: 200px;
+    border:5px solid white;
+    border-radius:25px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition:all 0.5s;
+    overflow:hidden;
+  }
+  h4{
+    width:100%;
+    text-align:center;
+    color:white;
+  }
+  .back{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top:1%;
+    left:1%;
+  }
+</style>
+<script>
+    
+  function get_cookie(cookie_name) { const value = "; " + document.cookie; const parts = value.split("; " + cookie_name + "="); if (parts.length === 2) return parts.pop().split(";").shift(); } 
+  
+  var title2=get_cookie("title2");
+  var favicon=get_cookie("favicon");
+  
+  if (favicon==null || favicon==undefined || favicon==""){
+        favicon="/img/logo.png";
+        document.cookie="favicon="+favicon+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
+        (function() {
+           var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
+           link.type='image/x-icon';
+           link.rel='shortcut icon';
+           link.href=favicon;
+           document.getElementsByTagName('head')[0].appendChild(link);
+       })();
+    }
+    else{
+        (function() {
+           var link=document.querySelector("link[rel*='icon']") || document.createElement('link');
+           link.type='image/x-icon';
+           link.rel='shortcut icon';
+           link.href=favicon;
+           document.getElementsByTagName('head')[0].appendChild(link);
+       })();
+    }
+    if (title2==null || title2==undefined || title2==""){
+        title2="DM Unbl0cker";
+        document.cookie="title2="+title2+"; expires=Thu, 18 Dec 9013 12:00:00 UTC; path=/";
+        document.title=title2;
+    }
+    else{
+        document.title=title2;
+    }
+</script>
+<script>
+  var fontsize1=2560/screen.width*18.5;
+  title1.style.fontSize = fontsize1+"px";
+</script>
+<script>
+
+  function reroutetohome(){
+    window.location.href=window.location.origin;
+  }
+  function spotify(){
+    window.location.href=window.location.origin+"/apps/afiles/spotify.html";
+  }
+  function youtube(){
+    window.location.href=window.location.origin+"/apps/afiles/youtube.html";
+  }
+  function gforce(){
+    window.location.href=window.location.origin+"/apps/afiles/gf0rce.html";
+  }
+  function reddit(){
+    window.location.href=window.location.origin+"/apps/afiles/reddit.html";
+  }
+function stackoverflow(){
+    window.location.href=window.location.origin+"/apps/afiles/stackoverflow.html";
+  }
+  function github(){
+    window.location.href=window.location.origin+"/apps/afiles/github.html";
+  }
+  function mo(){
+    window.location.href=window.location.origin+"/apps/afiles/mo.html";
+  }
+  function is(){
+    window.location.href=window.location.origin+"/apps/afiles/1nsecurly.html";
+  }
+function now(){
+    window.location.href=window.location.origin+"/apps/afiles/applauncher.html";
+  }
+</script>
