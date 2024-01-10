@@ -1,4 +1,4 @@
-# Shadow Network V1 A fast tab cloaking with hundreds of games to play and apps
+# Shadow Network V3 A fast tab cloaking with hundreds of games to play and apps
 ## Features:
 - Advanced Tab Cloaking
 - Advanced About:Blank Cloaking (prevents site from showing on browser history)
